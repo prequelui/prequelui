@@ -115,6 +115,25 @@
       ]
     },
     {
+      "name": "feature-bento",
+      "type": "registry:block",
+      "title": "Feature bento",
+      "description": "A five-tile bento grid of product features, each with a small live illustration: a self-drawing sparkline, a ticking counter, a toggling switch, a progress ring, and a typing command line. Tiles lift and glow on hover.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/feature-bento/feature-bento.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "utils"
+      ]
+    },
+    {
       "name": "goal-progress",
       "type": "registry:block",
       "title": "Goal progress",
@@ -172,6 +191,25 @@
       ]
     },
     {
+      "name": "pricing-toggle",
+      "type": "registry:block",
+      "title": "Pricing toggle",
+      "description": "Three pricing plans with a monthly/yearly switch: prices morph digit by digit, the yearly saving badge slides in, and the recommended plan carries a slow border light.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/pricing-toggle/pricing-toggle.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "utils"
+      ]
+    },
+    {
       "name": "radial-gauge",
       "type": "registry:block",
       "title": "Radial gauge",
@@ -202,6 +240,44 @@
       "files": [
         {
           "path": "registry/prequel/stat-ticker/stat-ticker.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "utils"
+      ]
+    },
+    {
+      "name": "stats-section",
+      "type": "registry:block",
+      "title": "Stats Section",
+      "description": "A quiet marketing stats band with four large numbers that count up when scrolled into view. Each stat pairs a small trend with a thin animated underline, with dividers on desktop and a 2x2 grid on phones.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/stats-section/stats-section.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "registryDependencies": [
+        "utils"
+      ]
+    },
+    {
+      "name": "testimonial-marquee",
+      "type": "registry:block",
+      "title": "Testimonial Marquee",
+      "description": "Two rows of testimonial cards drift in opposite directions with soft edge fades, pausing on hover or focus. Star ratings, initials avatars and a calm static grid for reduced motion keep it readable.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/testimonial-marquee/testimonial-marquee.tsx",
           "type": "registry:component"
         }
       ],

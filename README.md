@@ -6,7 +6,7 @@
 
 <p align="center">
   Animated, open-source blocks for <a href="https://ui.shadcn.com">shadcn/ui</a>.<br>
-  Charts, metrics, tables and feeds that move with intent. Copy them in with the shadcn CLI, then make them yours.
+  Charts, metrics, tables, feeds and marketing sections that move with intent. Copy them in with the shadcn CLI, then make them yours.
 </p>
 
 <p align="center">
@@ -52,11 +52,15 @@ The CLI copies the source into your project and installs what it needs (`motion`
 | [Conversion funnel](https://prequelui.terravidhal.me/blocks/conversion-funnel) | Visitors to paid with narrowing bars that fill in cascade, step-to-step drop-off percentages, and a slow flow shimmer on hover. | `npx shadcn@latest add @prequelui/conversion-funnel` |
 | [Data table](https://prequelui.terravidhal.me/blocks/data-table) | A sortable transactions table with animated row reordering, live search, and compact pagination. | `npx shadcn@latest add @prequelui/data-table` |
 | [Donut chart](https://prequelui.terravidhal.me/blocks/donut-chart) | Revenue by plan donut whose segments draw around the ring, with a count-up centre and a lens glint at the start angle. | `npx shadcn@latest add @prequelui/donut-chart` |
+| [Feature bento](https://prequelui.terravidhal.me/blocks/feature-bento) | A five-tile bento grid of product features, each with a small live illustration: a self-drawing sparkline, a ticking counter, a toggling switch, a progress ring, and a typing command line. | `npx shadcn@latest add @prequelui/feature-bento` |
 | [Goal progress](https://prequelui.terravidhal.me/blocks/goal-progress) | Quarter goals with linear progress bars that fill in sequence, milestone ticks, and a count-up percentage. | `npx shadcn@latest add @prequelui/goal-progress` |
 | [KPI counter](https://prequelui.terravidhal.me/blocks/kpi-counter) | A row of KPI cards whose numbers spring into view, with delta badges and self-drawing sparklines. | `npx shadcn@latest add @prequelui/kpi-counter` |
 | [Live feed](https://prequelui.terravidhal.me/blocks/live-feed) | A live activity feed where events slide in at the top, with relative timestamps, a pulsing live indicator, and pause on hover. | `npx shadcn@latest add @prequelui/live-feed` |
+| [Pricing toggle](https://prequelui.terravidhal.me/blocks/pricing-toggle) | Three pricing plans with a monthly/yearly switch: prices morph digit by digit, the yearly saving badge slides in, and the recommended plan carries a slow border light. | `npx shadcn@latest add @prequelui/pricing-toggle` |
 | [Radial gauge](https://prequelui.terravidhal.me/blocks/radial-gauge) | A 240° radial gauge with a self-drawing arc, a sweeping needle whose tip is a lens glint dot, tick marks around the dial, a count-up score, and a label with a delta beneath. | `npx shadcn@latest add @prequelui/radial-gauge` |
 | [Stat ticker](https://prequelui.terravidhal.me/blocks/stat-ticker) | A horizontally scrolling ticker of live stats (MRR, signups, conversion, NPS) that loops seamlessly, fades at both edges, pauses on hover/focus, and flips each value with a vertical slide as it refreshes. | `npx shadcn@latest add @prequelui/stat-ticker` |
+| [Stats Section](https://prequelui.terravidhal.me/blocks/stats-section) | A quiet marketing stats band with four large numbers that count up when scrolled into view. | `npx shadcn@latest add @prequelui/stats-section` |
+| [Testimonial Marquee](https://prequelui.terravidhal.me/blocks/testimonial-marquee) | Two rows of testimonial cards drift in opposite directions with soft edge fades, pausing on hover or focus. | `npx shadcn@latest add @prequelui/testimonial-marquee` |
 | [Uptime status](https://prequelui.terravidhal.me/blocks/uptime-status) | A status page with three services, each shown as 90 daily bars that rise in with a wave, hover/focus tooltips with date and status, an overall uptime count-up, and a legend. | `npx shadcn@latest add @prequelui/uptime-status` |
 
 ## Use it from your AI editor
