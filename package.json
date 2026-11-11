@@ -1,0 +1,24 @@
+{
+  "name": "prequelui",
+  "private": true,
+  "description": "Animated, open-source blocks for shadcn/ui. Source of the PrequelUI registry.",
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "registry:build": "shadcn build"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.555.0",
+    "motion": "^12.23.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "shadcn": "latest",
+    "typescript": "^5"
+  }
+}
