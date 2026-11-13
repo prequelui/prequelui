@@ -322,8 +322,8 @@ function KpiCard({ item, index, show, reduce, format }: KpiCardProps) {
         {item.label}
       </span>
 
-      <div className="flex items-end justify-between gap-3">
-        <span className="text-[28px] font-semibold leading-none tracking-tight tabular-nums">
+      <div className="flex flex-wrap items-end justify-between gap-x-3 gap-y-2">
+        <span className="min-w-0 text-[28px] font-semibold leading-none tracking-tight tabular-nums">
           {format(value, item)}
         </span>
         <Sparkline
