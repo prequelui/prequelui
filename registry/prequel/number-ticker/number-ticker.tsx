@@ -244,7 +244,7 @@ export function NumberTicker({
           >
             <span
               aria-hidden="true"
-              className="flex items-center text-[42px] font-semibold leading-none tracking-[-0.03em] text-foreground sm:text-[56px] md:text-[64px]"
+              className="flex items-center text-[40px] font-semibold leading-none tracking-[-0.03em] text-foreground sm:text-[56px] md:text-[64px]"
             >
               {characters.map((character, index) => {
                 if (/\d/.test(character)) {

@@ -130,19 +130,19 @@ const DEFAULT_SERVICES: UptimeService[] = [
   {
     id: "api",
     name: "API",
-    url: "api.acme.com",
+    url: "api.northwindlabs.com",
     days: generateDays(0x1234abcd, 1, 3, DEFAULT_DAY_COUNT),
   },
   {
     id: "dashboard",
     name: "Dashboard",
-    url: "app.acme.com",
+    url: "app.northwindlabs.com",
     days: generateDays(0x9e3779b9, 0, 2, DEFAULT_DAY_COUNT),
   },
   {
     id: "payments",
     name: "Payments",
-    url: "pay.acme.com",
+    url: "pay.northwindlabs.com",
     days: generateDays(0xdeadbeef, 1, 2, DEFAULT_DAY_COUNT),
   },
 ];

@@ -180,14 +180,14 @@ function StatCell({ stat, index, show, reduce, format }: StatCellProps) {
         ease: EASE,
       }}
       className={cn(
-        "group relative flex min-w-0 flex-col gap-2 px-4 py-6 sm:px-6 md:px-5 md:py-7 lg:px-7",
-        /* 2x2 on phones: a vertical rule in the right column and a
+        "group relative flex min-w-0 flex-col gap-2 px-3 py-6 sm:px-6 md:px-5 md:py-7 lg:px-7",
+        /* 2x2 on phones and tablets: a vertical rule in the right column and a
            horizontal rule under the first row. */
         index % 2 === 1 && "border-l border-border",
         index >= 2 && "border-t border-border",
         /* one row of four on desktop: only the vertical dividers remain. */
-        "md:border-t-0",
-        index > 0 && "md:border-l md:border-border"
+        "lg:border-t-0",
+        index > 0 && "lg:border-l lg:border-border"
       )}
     >
       <dt className="text-[12px] font-medium text-muted-foreground sm:text-[13px]">
@@ -195,7 +195,7 @@ function StatCell({ stat, index, show, reduce, format }: StatCellProps) {
       </dt>
 
       <dd className="m-0 flex flex-col gap-2">
-        <span className="text-[22px] font-semibold leading-none tracking-[-0.02em] tabular-nums text-foreground sm:text-[28px] md:text-[30px] lg:text-[34px]">
+        <span className="text-[18px] font-semibold leading-none tracking-[-0.02em] tabular-nums text-foreground sm:text-[22px] md:text-[24px] lg:text-[27px]">
           <span aria-hidden="true">{format(value, stat)}</span>
           <span className="sr-only">{format(stat.value, stat)}</span>
         </span>
@@ -314,7 +314,7 @@ export function StatsSection({
           </div>
         ) : null}
 
-        <dl className="grid grid-cols-2 md:grid-cols-4">
+        <dl className="grid grid-cols-2 lg:grid-cols-4">
           {safeStats.map((stat, index) => (
             <StatCell
               key={stat.id}

@@ -160,7 +160,7 @@ function FunnelRow({
           initial={false}
           animate={{ opacity: hovered ? 1 : 0, y: hovered ? 0 : 4, x: "-50%" }}
           transition={{ duration: 0.18, ease: EASE }}
-          className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 whitespace-nowrap rounded-lg border border-border bg-card px-2.5 py-1.5 text-[11.5px] text-muted-foreground shadow-md"
+          className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 w-max max-w-[calc(100%-1rem)] rounded-lg border border-border bg-card px-2.5 py-1.5 text-center text-[11.5px] leading-4 text-muted-foreground shadow-md"
         >
           <span className="tabular-nums">{tooltipText}</span>
         </motion.div>

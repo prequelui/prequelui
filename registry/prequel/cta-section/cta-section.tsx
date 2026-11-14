@@ -75,7 +75,7 @@ export function CtaSection({
   title = DEFAULT_TITLE,
   description = DEFAULT_DESCRIPTION,
   primaryLabel = "Browse the blocks",
-  primaryHref = "https://prequelui.terravidhal.me",
+  primaryHref = "https://prequelui.terravidhal.me/blocks",
   secondaryLabel = "View on GitHub",
   secondaryHref = "https://github.com/prequelui/prequelui",
   installCommand = DEFAULT_INSTALL,
@@ -137,7 +137,7 @@ export function CtaSection({
               <span aria-hidden="true" className="text-border">
                 /
               </span>
-              <span className="tabular-nums">17 blocks</span>
+              <span className="tabular-nums">29 blocks</span>
               <span aria-hidden="true" className="text-border">
                 /
               </span>

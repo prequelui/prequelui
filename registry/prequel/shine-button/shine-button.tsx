@@ -116,12 +116,16 @@ export function ShineButton({
     </>
   );
 
-  if (href) {
+  /* With neither a handler nor an href, the default demo copy still leads
+     somewhere real instead of behaving like a dead button. */
+  const link = href ?? (onClick ? undefined : "/changelog");
+
+  if (link) {
     return (
       <>
         <style>{SHINE_CSS}</style>
         <a
-          href={href}
+          href={link}
           onClick={onClick}
           aria-label={ariaLabel}
           aria-disabled={disabled || undefined}

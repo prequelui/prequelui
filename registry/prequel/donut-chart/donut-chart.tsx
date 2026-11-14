@@ -409,6 +409,7 @@ export function DonutChart({
                     <button
                       type="button"
                       aria-pressed={isActive}
+                      onClick={() => setActive(seg.id)}
                       onPointerEnter={() => setActive(seg.id)}
                       onPointerLeave={() =>
                         setActive((a) => (a === seg.id ? null : a))

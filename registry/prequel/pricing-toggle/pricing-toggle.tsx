@@ -29,6 +29,8 @@ export type PricingPlan = {
   yearlyPrice: number;
   features: string[];
   cta?: string;
+  /** Where the CTA leads when no `onSelectPlan` handler is provided. */
+  href?: string;
   recommended?: boolean;
 };
 
@@ -67,6 +69,7 @@ const DEFAULT_PLANS: PricingPlan[] = [
       "Email support",
     ],
     cta: "Start free",
+    href: "/pricing",
   },
   {
     id: "studio",
@@ -82,6 +85,7 @@ const DEFAULT_PLANS: PricingPlan[] = [
       "Priority support",
     ],
     cta: "Start free trial",
+    href: "/pricing",
     recommended: true,
   },
   {
@@ -98,6 +102,7 @@ const DEFAULT_PLANS: PricingPlan[] = [
       "99.9% uptime SLA",
     ],
     cta: "Contact sales",
+    href: "/pricing",
   },
 ];
 
@@ -249,7 +254,7 @@ function PricingCard({
       {plan.recommended ? <BorderLight reduce={reduce} /> : null}
 
       <div className="relative z-10 flex flex-1 flex-col">
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex flex-wrap items-center justify-between gap-2">
           <h3 className="text-[15px] font-medium tracking-tight">
             {plan.name}
           </h3>
@@ -311,18 +316,32 @@ function PricingCard({
           </AnimatePresence>
         </div>
 
-        <button
-          type="button"
-          onClick={() => onSelect?.(plan, period)}
-          className={cn(
-            "mt-4 inline-flex h-10 w-full items-center justify-center rounded-lg px-4 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
-            plan.recommended
-              ? "bg-foreground text-background hover:bg-foreground/90"
-              : "border border-border bg-background text-foreground hover:bg-muted"
-          )}
-        >
-          {plan.cta ?? "Get started"}
-        </button>
+        {plan.href && !onSelect ? (
+          <a
+            href={plan.href}
+            className={cn(
+              "mt-4 inline-flex h-10 w-full items-center justify-center rounded-lg px-4 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+              plan.recommended
+                ? "bg-foreground text-background hover:bg-foreground/90"
+                : "border border-border bg-background text-foreground hover:bg-muted"
+            )}
+          >
+            {plan.cta ?? "Get started"}
+          </a>
+        ) : (
+          <button
+            type="button"
+            onClick={() => onSelect?.(plan, period)}
+            className={cn(
+              "mt-4 inline-flex h-10 w-full items-center justify-center rounded-lg px-4 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+              plan.recommended
+                ? "bg-foreground text-background hover:bg-foreground/90"
+                : "border border-border bg-background text-foreground hover:bg-muted"
+            )}
+          >
+            {plan.cta ?? "Get started"}
+          </button>
+        )}
 
         <div className="my-4 h-px w-full bg-border" />
 

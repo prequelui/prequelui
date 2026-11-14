@@ -40,8 +40,8 @@ export type HeroSectionProps = {
 };
 
 const DEFAULT_ANNOUNCEMENT: HeroSectionAnnouncement = {
-  label: "v1.4 · 17 free blocks, MIT licensed",
-  href: "https://prequelui.terravidhal.me",
+  label: "v1.4 · 29 free blocks, MIT licensed",
+  href: "https://prequelui.terravidhal.me/blocks",
 };
 
 const DEFAULT_TITLE = "Ship a dashboard your users actually open.";
@@ -50,7 +50,7 @@ const DEFAULT_DESCRIPTION =
 
 const DEFAULT_PRIMARY: HeroSectionAction = {
   label: "Browse free blocks",
-  href: "https://prequelui.terravidhal.me",
+  href: "https://prequelui.terravidhal.me/blocks",
 };
 
 const DEFAULT_SECONDARY: HeroSectionAction = {
