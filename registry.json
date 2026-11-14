@@ -43,6 +43,19 @@
       ]
     },
     {
+      "name": "blur-in-text",
+      "type": "registry:block",
+      "title": "Blur-in text",
+      "description": "A pull quote whose letters sharpen in sequence as it enters the viewport, with the attribution settling in after the last letter.",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/prequel/blur-in-text/blur-in-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "changelog-section",
       "type": "registry:block",
       "title": "Changelog Section",
@@ -280,11 +293,24 @@
       "name": "text-reveal",
       "type": "registry:block",
       "title": "Text reveal",
-      "description": "A heading whose words rise in with a soft blur-to-sharp, staggered as it enters the viewport, with the full text shown immediately under reduced motion.",
+      "description": "A heading whose words light up one by one as it scrolls through the viewport, with a thin progress rail and a percentage readout.",
       "dependencies": ["motion"],
       "files": [
         {
           "path": "registry/prequel/text-reveal/text-reveal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "typing-headline",
+      "type": "registry:block",
+      "title": "Typing headline",
+      "description": "A headline with a rotating word typed and erased behind a caret, plus a quiet list that tracks the word currently in rotation.",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/prequel/typing-headline/typing-headline.tsx",
           "type": "registry:component"
         }
       ]
