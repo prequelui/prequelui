@@ -17,6 +17,19 @@
       ]
     },
     {
+      "name": "animated-beam",
+      "type": "registry:block",
+      "title": "Animated beam",
+      "description": "A live routing diagram where beams of light travel from three sources through a gateway to three destinations, with hover and keyboard inspection.",
+      "dependencies": ["motion", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/prequel/animated-beam/animated-beam.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "area-chart",
       "type": "registry:block",
       "title": "Area chart",
@@ -194,6 +207,32 @@
       "files": [
         {
           "path": "registry/prequel/live-feed/live-feed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "marquee",
+      "type": "registry:block",
+      "title": "Marquee",
+      "description": "An infinite two-row logo band drifting in opposite directions, with soft edge fades and pause on hover or focus.",
+      "dependencies": ["motion", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/prequel/marquee/marquee.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "number-ticker",
+      "type": "registry:block",
+      "title": "Number ticker",
+      "description": "A large metric whose digits roll into place when scrolled into view, with switchable metrics, a delta and a replay control.",
+      "dependencies": ["motion", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/prequel/number-ticker/number-ticker.tsx",
           "type": "registry:component"
         }
       ]
