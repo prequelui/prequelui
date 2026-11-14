@@ -225,6 +225,19 @@
       ]
     },
     {
+      "name": "shimmer-button",
+      "type": "registry:block",
+      "title": "Shimmer button",
+      "description": "A button with a light sweep across the surface on entrance, hover and focus, plus a ripple that starts where you click.",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/prequel/shimmer-button/shimmer-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "shine-button",
       "type": "registry:block",
       "title": "Shine button",
@@ -233,6 +246,19 @@
       "files": [
         {
           "path": "registry/prequel/shine-button/shine-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spotlight-card",
+      "type": "registry:block",
+      "title": "Spotlight card",
+      "description": "A card that catches the pointer: a soft spotlight follows the cursor across the surface and lights a thin border around the edge.",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/prequel/spotlight-card/spotlight-card.tsx",
           "type": "registry:component"
         }
       ]
@@ -285,6 +311,19 @@
       "files": [
         {
           "path": "registry/prequel/text-reveal/text-reveal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tilt-card",
+      "type": "registry:block",
+      "title": "Tilt card",
+      "description": "A dashboard card that tilts in 3D toward the pointer, with a moving light reflection and layered content that gains depth.",
+      "dependencies": ["motion", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/prequel/tilt-card/tilt-card.tsx",
           "type": "registry:component"
         }
       ]
