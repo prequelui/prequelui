@@ -110,6 +110,7 @@ export function TypingHeadline({
   }, [inView, reduce, signature, typeSpeed, holdMs]);
 
   const showCaret = !reduce && !done;
+  const displayed = reduce ? (safeWords[0] ?? "") : typed;
 
   return (
     <MotionConfig reducedMotion="user">
@@ -119,7 +120,7 @@ export function TypingHeadline({
       >
         <h2 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
           <span className="text-muted-foreground">{prefix}</span>{" "}
-          <span className="text-foreground">{typed || "\u00A0"}</span>
+          <span className="text-foreground">{displayed || "\u00A0"}</span>
           {showCaret ? (
             <motion.span
               aria-hidden="true"
