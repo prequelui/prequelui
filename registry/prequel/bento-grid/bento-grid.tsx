@@ -209,19 +209,15 @@ function Tile({ children, index, show, reduce, className }: TileProps) {
   return (
     <motion.div
       initial={reduce ? false : { opacity: 0, y: 14 }}
-      animate={
-        reduce
-          ? undefined
-          : {
-              opacity: show ? 1 : 0,
-              y: 0,
-              transition: {
-                duration: 0.55,
-                delay: index * 0.07,
-                ease: EASE,
-              },
-            }
-      }
+      animate={{
+        opacity: reduce || show ? 1 : 0,
+        y: reduce || show ? 0 : 14,
+        transition: {
+          duration: reduce ? 0 : 0.55,
+          delay: reduce ? 0 : index * 0.07,
+          ease: EASE,
+        },
+      }}
       className={cn(
         "group relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-muted/20 p-4 transition-colors duration-300 hover:border-muted-foreground/30 sm:p-5",
         className
@@ -405,11 +401,10 @@ function SearchTile({ data, index, show, reduce }: SearchTileProps) {
           <motion.div
             key={`${result.title}-${rowIndex}`}
             initial={reduce ? false : { opacity: 0, y: 6 }}
-            animate={
-              reduce
-                ? undefined
-                : { opacity: done ? 1 : 0, y: done ? 0 : 6 }
-            }
+            animate={{
+              opacity: reduce || done ? 1 : 0,
+              y: reduce || done ? 0 : 6,
+            }}
             transition={{
               duration: reduce ? 0 : 0.35,
               delay: reduce ? 0 : rowIndex * 0.06,
