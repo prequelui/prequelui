@@ -161,6 +161,22 @@
       ]
     },
     {
+      "name": "dialog",
+      "type": "registry:block",
+      "title": "Dialog",
+      "description": "A settings danger zone whose confirmation dialog springs in, traps focus, and restores the workspace with an inline undo.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/dialog/dialog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "donut-chart",
       "type": "registry:block",
       "title": "Donut chart",
@@ -201,6 +217,22 @@
       "files": [
         {
           "path": "registry/prequel/dot-pattern-background/dot-pattern-background.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:block",
+      "title": "Dropdown menu",
+      "description": "An invoice actions menu with a highlight that glides to the hovered item, staggered entries, and full keyboard navigation.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/dropdown-menu/dropdown-menu.tsx",
           "type": "registry:component"
         }
       ]
@@ -350,6 +382,22 @@
       ]
     },
     {
+      "name": "popover",
+      "type": "registry:block",
+      "title": "Popover",
+      "description": "An export popover that grows from its trigger, with a sliding format switch, toggles, and a live confirmation when the file is queued.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/popover/popover.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "pricing-toggle",
       "type": "registry:block",
       "title": "Pricing toggle",
@@ -405,6 +453,22 @@
       "files": [
         {
           "path": "registry/prequel/shine-button/shine-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "side-sheet",
+      "type": "registry:block",
+      "title": "Side sheet",
+      "description": "A deployment log that slides in from the right, with staggered build steps, a copyable commit SHA and a queued rollback.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/side-sheet/side-sheet.tsx",
           "type": "registry:component"
         }
       ]
@@ -499,6 +563,22 @@
       "files": [
         {
           "path": "registry/prequel/tilt-card/tilt-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:block",
+      "title": "Tooltip",
+      "description": "A selection toolbar whose tooltips spring from each action's edge, with shortcuts, focus support and an Escape dismissal.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/tooltip/tooltip.tsx",
           "type": "registry:component"
         }
       ]
