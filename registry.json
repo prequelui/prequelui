@@ -97,6 +97,22 @@
       ]
     },
     {
+      "name": "breadcrumb",
+      "type": "registry:block",
+      "title": "Breadcrumb",
+      "description": "A breadcrumb trail that folds long paths behind an expanding ellipsis, with real links, a current-page marker and a lens dot.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/breadcrumb/breadcrumb.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "changelog-section",
       "type": "registry:block",
       "title": "Changelog Section",
@@ -238,6 +254,22 @@
       ]
     },
     {
+      "name": "file-upload",
+      "type": "registry:block",
+      "title": "File upload",
+      "description": "A dropzone with click-to-browse, size validation, and file rows that animate a simulated upload to completion.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/file-upload/file-upload.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "goal-progress",
       "type": "registry:block",
       "title": "Goal progress",
@@ -265,6 +297,22 @@
       "files": [
         {
           "path": "registry/prequel/hero-section/hero-section.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:block",
+      "title": "Input OTP",
+      "description": "A six-digit code input with per-digit focus lifting, paste and arrow-key handling, a resend timer, and a verified state.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/input-otp/input-otp.tsx",
           "type": "registry:component"
         }
       ]
@@ -350,6 +398,22 @@
       ]
     },
     {
+      "name": "pagination",
+      "type": "registry:block",
+      "title": "Pagination",
+      "description": "A pagination bar with a sliding active page, compressed page ranges, disabled edge arrows, a position rail and a range summary.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/pagination/pagination.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "pricing-toggle",
       "type": "registry:block",
       "title": "Pricing toggle",
@@ -410,6 +474,21 @@
       ]
     },
     {
+      "name": "slider",
+      "type": "registry:block",
+      "title": "Slider",
+      "description": "A seat-pricing slider with a native range under a custom track, a lens thumb, tick marks and a live monthly total.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/slider/slider.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "spotlight-card",
       "type": "registry:block",
       "title": "Spotlight card",
@@ -452,6 +531,22 @@
       "files": [
         {
           "path": "registry/prequel/stats-section/stats-section.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "stepper",
+      "type": "registry:block",
+      "title": "Stepper",
+      "description": "A four-step setup stepper with a filling rail, completed checks, an animated detail panel and Back/Continue controls.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/stepper/stepper.tsx",
           "type": "registry:component"
         }
       ]
