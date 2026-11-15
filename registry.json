@@ -51,6 +51,21 @@
       ]
     },
     {
+      "name": "avatar-spread",
+      "type": "registry:block",
+      "title": "Avatar spread",
+      "description": "A collaborator stack that fans out on hover or focus, with status dots, per-person tooltips and a line that follows the person under the pointer.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/avatar-spread/avatar-spread.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "bar-chart",
       "type": "registry:block",
       "title": "Bar chart",
@@ -124,6 +139,22 @@
       "files": [
         {
           "path": "registry/prequel/conversion-funnel/conversion-funnel.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "copy-morph",
+      "type": "registry:block",
+      "title": "Copy morph",
+      "description": "An install command with package-manager tabs and a copy button whose sheets fold away as the check draws in, then swaps back after two seconds.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/copy-morph/copy-morph.tsx",
           "type": "registry:component"
         }
       ]
@@ -366,6 +397,21 @@
       ]
     },
     {
+      "name": "progress-bars",
+      "type": "registry:block",
+      "title": "Progress bars",
+      "description": "Workspace storage as one segmented bar that fills in cascade, with a warning tick, hover-synced legend rows and a count-up total.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/progress-bars/progress-bars.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "radial-gauge",
       "type": "registry:block",
       "title": "Radial gauge",
@@ -377,6 +423,38 @@
       "files": [
         {
           "path": "registry/prequel/radial-gauge/radial-gauge.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radial-progress",
+      "type": "registry:block",
+      "title": "Radial progress",
+      "description": "Three concentric rings draw in sequence with a glint at each end; hovering an objective lifts its ring and counts the centre value to it.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/radial-progress/radial-progress.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "rolling-number",
+      "type": "registry:block",
+      "title": "Rolling number",
+      "description": "A credit balance whose digits roll up or down with the direction of the change, driven by a stepper and tied to a live usage bar.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/rolling-number/rolling-number.tsx",
           "type": "registry:component"
         }
       ]
@@ -499,6 +577,37 @@
       "files": [
         {
           "path": "registry/prequel/tilt-card/tilt-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "toast-stack",
+      "type": "registry:block",
+      "title": "Toast stack",
+      "description": "A notification stack where new cards slide in on top, older ones tuck behind with a spring, and the oldest leaves on a timer that pauses on hover.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/toast-stack/toast-stack.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:block",
+      "title": "Toggle group",
+      "description": "A segmented language switcher with a selection pill that slides between options, roving arrow-key focus, and a snippet that swaps in with a short slide.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/toggle-group/toggle-group.tsx",
           "type": "registry:component"
         }
       ]
