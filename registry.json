@@ -66,6 +66,22 @@
       ]
     },
     {
+      "name": "bento-grid",
+      "type": "registry:block",
+      "title": "Bento grid",
+      "description": "An asymmetric five-tile feature grid where every tile runs its own small live illustration: packets on a sync graph, a typing search, webhook retries, an access stack and a latency waveform.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/bento-grid/bento-grid.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "blur-in-text",
       "type": "registry:block",
       "title": "Blur-in text",
@@ -170,6 +186,21 @@
       "files": [
         {
           "path": "registry/prequel/dot-grid-background/dot-grid-background.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dot-pattern-background",
+      "type": "registry:block",
+      "title": "Dot pattern background",
+      "description": "A canvas of dots that lean away from the cursor and ease back into place, with children on top and a still grid under reduced motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/dot-pattern-background/dot-pattern-background.tsx",
           "type": "registry:component"
         }
       ]
@@ -298,6 +329,22 @@
       "files": [
         {
           "path": "registry/prequel/number-ticker/number-ticker.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "orbiting-icons",
+      "type": "registry:block",
+      "title": "Orbiting icons",
+      "description": "Three counter-rotating rings of integration icons orbit a lens centre; hover, focus or tap a node to hold the orbit and read what it connects.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/orbiting-icons/orbiting-icons.tsx",
           "type": "registry:component"
         }
       ]
