@@ -40,7 +40,7 @@ export type HeroSectionProps = {
 };
 
 const DEFAULT_ANNOUNCEMENT: HeroSectionAnnouncement = {
-  label: "v1.4 · 29 free blocks, MIT licensed",
+  label: "v1.4 · 57 free blocks, MIT licensed",
   href: "https://prequelui.terravidhal.me/blocks",
 };
 

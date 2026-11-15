@@ -278,8 +278,10 @@ export function OrbitingIcons({
                 const degrees =
                   ring.offset + (position / ringItems.length) * 360;
                 const radians = (degrees * Math.PI) / 180;
-                const left = 50 + Math.cos(radians) * ring.radius;
-                const top = 50 + Math.sin(radians) * ring.radius;
+                /* Round the percentage so server and client render the
+                   exact same style string (no hydration mismatch). */
+                const left = Math.round((50 + Math.cos(radians) * ring.radius) * 1000) / 1000;
+                const top = Math.round((50 + Math.sin(radians) * ring.radius) * 1000) / 1000;
                 const Icon = item.icon;
                 const isActive = index === activeIndex;
 

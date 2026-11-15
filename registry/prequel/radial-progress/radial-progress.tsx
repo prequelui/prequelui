@@ -80,9 +80,12 @@ function average(items: RadialProgressItem[]) {
 
 function pointOnRing(radius: number, value: number) {
   const angle = (-90 + (clamp(value, 0, 100) / 100) * 360) * (Math.PI / 180);
+  /* Round before rendering: the last digits of Math.cos/Math.sin are not
+     guaranteed to match between the server and the browser. */
+  const round = (n: number) => Math.round(n * 1000) / 1000;
   return {
-    x: CENTER + Math.cos(angle) * radius,
-    y: CENTER + Math.sin(angle) * radius,
+    x: round(CENTER + Math.cos(angle) * radius),
+    y: round(CENTER + Math.sin(angle) * radius),
   };
 }
 
@@ -249,7 +252,7 @@ export function RadialProgress({
                 {Math.round(clamp(displayValue, 0, 100))}%
               </span>
               <span className="mt-1.5 max-w-[120px] truncate text-[11px] leading-4 text-muted-foreground">
-                {active ? active.label : "across 3 objectives"}
+                {active ? active.label : `across ${shown.length} ${shown.length === 1 ? "objective" : "objectives"}`}
               </span>
             </div>
           </div>

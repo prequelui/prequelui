@@ -88,6 +88,13 @@ function polar(cx: number, cy: number, r: number, deg: number) {
   return { x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) };
 }
 
+/* Round geometry before it reaches the SVG: Math.cos/Math.sin can differ in
+   their last digits between the server and the browser, which React reports
+   as a hydration mismatch. Three decimals is well below a pixel. */
+function round(n: number) {
+  return Math.round(n * 1000) / 1000;
+}
+
 function arcPath(cx: number, cy: number, r: number, startDeg: number, endDeg: number) {
   const s = polar(cx, cy, r, startDeg);
   const e = polar(cx, cy, r, endDeg);
@@ -177,7 +184,8 @@ export function RadialGauge({
 
   const progress = useProgress(fraction, { start: show, reduce, delay: BASE_DELAY });
   const needleAngle = START + progress * SWEEP;
-  const tip = polar(CX, CY, R, needleAngle);
+  const tipPoint = polar(CX, CY, R, needleAngle);
+  const tip = { x: round(tipPoint.x), y: round(tipPoint.y) };
 
   const format = formatValue ?? ((v: number) => Math.round(v).toLocaleString("en-US"));
   const formatDeltaValue =
@@ -260,10 +268,10 @@ export function RadialGauge({
                   return (
                     <line
                       key={`minor-${angle}`}
-                      x1={a.x}
-                      y1={a.y}
-                      x2={b.x}
-                      y2={b.y}
+                      x1={round(a.x)}
+                      y1={round(a.y)}
+                      x2={round(b.x)}
+                      y2={round(b.y)}
                       stroke="var(--border)"
                       strokeWidth={1}
                       strokeLinecap="round"
@@ -276,10 +284,10 @@ export function RadialGauge({
                   return (
                     <line
                       key={`major-${angle}`}
-                      x1={a.x}
-                      y1={a.y}
-                      x2={b.x}
-                      y2={b.y}
+                      x1={round(a.x)}
+                      y1={round(a.y)}
+                      x2={round(b.x)}
+                      y2={round(b.y)}
                       stroke="var(--muted-foreground)"
                       strokeWidth={1.5}
                       strokeLinecap="round"
@@ -303,8 +311,8 @@ export function RadialGauge({
                   return (
                     <text
                       key={l.text}
-                      x={p.x}
-                      y={p.y}
+                      x={round(p.x)}
+                      y={round(p.y)}
                       textAnchor="middle"
                       dominantBaseline="central"
                       fill="var(--muted-foreground)"

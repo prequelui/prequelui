@@ -547,9 +547,11 @@ const RING_CIRCUMFERENCE = 2 * Math.PI * RING_R;
 
 function polar(cx: number, cy: number, r: number, degrees: number) {
   const radians = (degrees * Math.PI) / 180;
+  /* Round before rendering so server and client agree on the last digits. */
+  const round = (n: number) => Math.round(n * 1000) / 1000;
   return {
-    x: cx + r * Math.cos(radians),
-    y: cy + r * Math.sin(radians),
+    x: round(cx + r * Math.cos(radians)),
+    y: round(cy + r * Math.sin(radians)),
   };
 }
 

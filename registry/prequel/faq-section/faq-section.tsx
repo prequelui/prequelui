@@ -55,7 +55,7 @@ const DEFAULT_INTRO =
 const DEFAULT_CONTACT_TEXT =
   "Can't find your answer? Ask on GitHub — the same place the source lives.";
 const DEFAULT_CONTACT_LABEL = "Ask on GitHub";
-const DEFAULT_CONTACT_HREF = "https://github.com/prequelui";
+const DEFAULT_CONTACT_HREF = "https://github.com/prequelui/prequelui";
 
 const DEFAULT_TOPICS = ["Billing", "Install", "Licence"];
 

@@ -137,7 +137,7 @@ export function CtaSection({
               <span aria-hidden="true" className="text-border">
                 /
               </span>
-              <span className="tabular-nums">29 blocks</span>
+              <span className="tabular-nums">57 blocks</span>
               <span aria-hidden="true" className="text-border">
                 /
               </span>

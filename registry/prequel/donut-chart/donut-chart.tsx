@@ -68,7 +68,12 @@ function trimZero(n: number) {
 
 function polar(cx: number, cy: number, r: number, deg: number) {
   const a = (deg * Math.PI) / 180;
-  return { x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) };
+  /* Round before rendering: trig last digits can differ server/browser. */
+  const round = (n: number) => Math.round(n * 1000) / 1000;
+  return {
+    x: round(cx + r * Math.cos(a)),
+    y: round(cy + r * Math.sin(a)),
+  };
 }
 
 function arcPath(cx: number, cy: number, r: number, startDeg: number, endDeg: number) {

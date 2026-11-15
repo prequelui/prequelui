@@ -57,14 +57,16 @@ function lcg(seed: number) {
   };
 }
 
+/* UTC on purpose: labels must read the same on the server and in the
+   visitor's timezone, or hydration would disagree. */
 function dayLabel(offset: number) {
-  const d = new Date(2026, 9, 10 + offset);
-  return `${MONTHS[d.getMonth()]} ${d.getDate()}`;
+  const d = new Date(Date.UTC(2026, 9, 10 + offset));
+  return `${MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}`;
 }
 
 function monthLabel(index: number) {
-  const d = new Date(2025, 11 + index, 1);
-  return `${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+  const d = new Date(Date.UTC(2025, 11 + index, 1));
+  return `${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
 }
 
 function buildPoints(

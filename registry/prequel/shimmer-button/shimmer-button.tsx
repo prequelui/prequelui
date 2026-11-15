@@ -198,12 +198,16 @@ export function ShimmerButton({
     </>
   );
 
-  if (href) {
+  /* The default demo copy has no handler; point it at a real page rather
+     than leaving a button that does nothing. */
+  const link = href ?? (onClick ? undefined : "/docs/installation");
+
+  if (link) {
     return (
       <>
         <style>{SHIMMER_CSS}</style>
         <a
-          href={href}
+          href={link}
           onClick={handleClick}
           aria-label={ariaLabel}
           aria-disabled={disabled || undefined}
