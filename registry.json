@@ -35,6 +35,21 @@
       ]
     },
     {
+      "name": "animated-tabs",
+      "type": "registry:block",
+      "title": "Animated tabs",
+      "description": "A segmented view switcher whose pill glides between tabs on a spring while the panel slides and the card height follows.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/animated-tabs/animated-tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "area-chart",
       "type": "registry:block",
       "title": "Area chart",
@@ -318,6 +333,21 @@
       ]
     },
     {
+      "name": "moving-radio",
+      "type": "registry:block",
+      "title": "Moving radio",
+      "description": "A radio group with a dot that travels between options on a spring, updating a live schedule summary underneath.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/moving-radio/moving-radio.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "number-ticker",
       "type": "registry:block",
       "title": "Number ticker",
@@ -420,6 +450,52 @@
       "files": [
         {
           "path": "registry/prequel/spotlight-card/spotlight-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spring-accordion",
+      "type": "registry:block",
+      "title": "Spring accordion",
+      "description": "A settings accordion whose rows open on a spring, the chevron turning as the panel unfolds.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/spring-accordion/spring-accordion.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spring-checkbox",
+      "type": "registry:block",
+      "title": "Spring checkbox",
+      "description": "A task checklist where every box springs, the check draws itself and a thin bar tracks what is done.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/spring-checkbox/spring-checkbox.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spring-switch",
+      "type": "registry:block",
+      "title": "Spring switch",
+      "description": "Notification rows with a physical switch: the knob glides on a spring, the track fills and a small live count follows.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/prequel/spring-switch/spring-switch.tsx",
           "type": "registry:component"
         }
       ]
