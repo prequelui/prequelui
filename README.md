@@ -80,9 +80,33 @@ claude mcp add --transport http prequelui https://prequelui.terravidhal.me/mcp
 
 Setup for the other editors: [prequelui.terravidhal.me/docs/mcp](https://prequelui.terravidhal.me/docs/mcp).
 
+## Free PrequelUI Pro blocks
+
+[PrequelUI Pro](https://prequeluipro.terravidhal.me) is the paid companion of PrequelUI. Four of its blocks are free: they install without a licence key, and their source is here, in [`registry/pro-free`](registry/pro-free).
+
+| Block | What it does | Install |
+| --- | --- | --- |
+| Pricing table | A plan comparison with grouped limits, per-editor prices that morph between monthly and yearly, and a featured column wrapped in a slow glow. | `npx shadcn@latest add @prequelui-pro/pricing-table` |
+| Command menu | A ⌘K palette that groups navigation, actions and recent work, filters as you type and keeps arrow-key selection. | `npx shadcn@latest add @prequelui-pro/command-menu` |
+| Core Web Vitals monitor | Field LCP, INP and CLS per route, with the share of good, average and poor loads and what to fix first. | `npx shadcn@latest add @prequelui-pro/web-vitals` |
+| Aurora veil | Tall folded curtains of theme colour drift behind a grained haze, each on its own slow path. | `npx shadcn@latest add @prequelui-pro/aurora-veil` |
+
+Until `@prequelui-pro` is in the shadcn directory, add it once in `components.json`:
+
+```json
+{
+  "registries": {
+    "@prequelui-pro": "https://prequeluipro.terravidhal.me/r/{name}.json"
+  }
+}
+```
+
+The other Pro items (complete dashboards, templates, SaaS blocks and film effects) need a licence key.
+
 ## What this repository contains
 
 - `registry/prequel/<name>/`: the source of each block, exactly what the CLI copies.
+- `registry/pro-free/<name>/`: the source of the four free PrequelUI Pro blocks.
 - `registry.json`: the registry index (names, descriptions, dependencies).
 - `lib/utils.ts`: the `cn` helper the blocks import.
 
